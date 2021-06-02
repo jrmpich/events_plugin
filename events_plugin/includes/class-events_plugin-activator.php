@@ -20,7 +20,7 @@
  * @subpackage Events_plugin/includes
  * @author     Jérémy Pich <pich.jeremy@gmail.com>
  */
-class Events_plugin_Activator {
+class Events_Plugin_Activator {
 
 	/**
 	 * Short Description. (use period)

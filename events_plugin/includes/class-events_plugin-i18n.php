@@ -24,7 +24,7 @@
  * @subpackage Events_plugin/includes
  * @author     Jérémy Pich <pich.jeremy@gmail.com>
  */
-class Events_plugin_i18n {
+class Events_Plugin_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Events_plugin_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'Events_plugin',
+			'events_plugin',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

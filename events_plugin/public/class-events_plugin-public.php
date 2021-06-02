@@ -20,7 +20,7 @@
  * @subpackage Events_plugin/public
  * @author     Jérémy Pich <pich.jeremy@gmail.com>
  */
-class Events_plugin_Public {
+class Events_Plugin_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -63,7 +63,7 @@ class Events_plugin_Public {
 
 		if ( is_post_type_archive( 'evenements' ) ) {
 
-			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/Events_plugin-public.css', array(), $this->version, 'all' );
+			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/events_plugin-public.css', array(), $this->version, 'all' );
 
 		}
 
@@ -106,20 +106,21 @@ class Events_plugin_Public {
 			$theme_files = array('archive-' . $custom_post_type . '.php', $this->plugin_name . '/archive-' . $custom_post_type . '.php');
 			$exists_in_theme = locate_template( $theme_files, false );
 			if ( $exists_in_theme != '' ) {
+				$archive_template = $exists_in_theme;
 				return $archive_template;
 			} else {
 				if ( file_exists( WP_PLUGIN_DIR . '/' . $this->plugin_name . '/public/' . $templates_dir . '/archive-' . $custom_post_type . '.php' ) ) {
 					return WP_PLUGIN_DIR . '/' . $this->plugin_name . '/public/' . $templates_dir . '/archive-' . $custom_post_type . '.php';
 				}
 				else {
-					return null;
+					return;
 				}
 	
 			}
 	
 		}
 	
-		return $archive_template;
+		return;
 	}
 
 	public function events_posts( $query ) {

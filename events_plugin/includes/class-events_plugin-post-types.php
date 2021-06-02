@@ -14,8 +14,8 @@ class Event_Plugin_Post_Types {
             'view_item'             => sprintf( __( 'Voir l\'%s', 'events_plugin' ), strtolower( $fields['singular'] ) ),
             'view_items'            => sprintf( __( 'Voir les %s', 'events_plugin' ), strtolower( $fields['plural'] ) ),
             'search_items'          => sprintf( __( 'Rechercher des %s', 'events_plugin' ), strtolower( $fields['plural'] ) ),
-            'not_found'             => sprintf( __( 'Pas de %s trouvé', 'events_plugin' ), strtolower( $fields['single'] ) ),
-            'not_found_in_trash'    => sprintf( __( 'Aucun %s dans le corbeille', 'events_plugin' ), strtolower( $fields['single'] ) ),
+            'not_found'             => sprintf( __( 'Pas de %s trouvé', 'events_plugin' ), strtolower( $fields['singular'] ) ),
+            'not_found_in_trash'    => sprintf( __( 'Aucun %s dans le corbeille', 'events_plugin' ), strtolower( $fields['singular'] ) ),
             'all_items'             => sprintf( __( 'Tous les %s', 'events_plugin' ), strtolower( $fields['plural'] ) ),
 
             /* Custom archive label.  Must filter 'post_type_archive_title' to use. */

@@ -21,7 +21,7 @@
  * @subpackage Events_plugin/includes
  * @author     Jérémy Pich <pich.jeremy@gmail.com>
  */
-class Events_plugin_Loader {
+class Events_Plugin_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.
